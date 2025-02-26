@@ -164,29 +164,29 @@ const tools = [
   {
     name: "Syft AI",
     description: "AI for data analytics and automation.",
-    logo: "https://syft.ai/favicon.ico",
-    link: "https://syft.ai/",
+    logo: "https://justsyft.com/favicon.ico",
+    link: "https://justsyft.com/",
     category: "Data"
   },
   {
     name: "ReedPartner",
-    description: "AI recruitment and job-matching tool.",
-    logo: "https://reedpartner.com/favicon.ico",
-    link: "https://reedpartner.com/",
-    category: "HR"
+    description: "AI assistant for automated news digests and quick summaries of Websites, Videos and Documents.",
+    logo: "https://cdn.prod.website-files.com/665ea7a71991a37e15f1062c/66bc7cb88252c4fdcf0a7005_favicon-32x32.png",
+    link: "https://readpartner.com/",
+    category: "Productivity"
   },
   {
     name: "WatchMyCompetitor",
     description: "AI-powered competitive intelligence tool.",
-    logo: "https://watchmycompetitor.com/favicon.ico",
-    link: "https://watchmycompetitor.com/",
+    logo: "https://watchmycompetitor.com/Content/img/logo_thumb.png",
+    link: "https://www.watchmycompetitor.com/",
     category: "Business"
   },
   {
     name: "Interpret AI",
     description: "AI-powered text and voice analysis.",
-    logo: "https://interpret.ai/favicon.ico",
-    link: "https://interpret.ai/",
+    logo: "https://interpretapp.ai/favicon.ico",
+    link: "https://interpretapp.ai/",
     category: "AI Research"
   },
   {
