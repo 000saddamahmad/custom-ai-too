@@ -198,9 +198,9 @@ const tools = [
   },
   {
     name: "Deep Sequencer",
-    description: "AI-powered music composition.",
-    logo: "https://deepsequencer.com/favicon.ico",
-    link: "https://deepsequencer.com/",
+    description: "Generate or transform your content with multi-step AI workflows.",
+    logo: "https://media.theresanaiforthat.com/icons/deep-sequencer.png",
+    link: "https://deepsequencer.netlify.app/",
     category: "Music"
   },
   {
