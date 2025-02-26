@@ -139,8 +139,8 @@ const tools = [
     link: "https://cloud.google.com/text-to-speech",
     category: "Audio"
   }
+  // Add more AI tools here to reach 100 total
 ];
-//add more ai tools here
   
   const toolList = document.getElementById("tool-list");
   
