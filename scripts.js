@@ -101,7 +101,7 @@ const tools = [
   {
     name: "Generor",
     description: "AI-powered idea generation tool.",
-    logo: "https://generor.com/favicon.ico",
+    logo: "https://generor.com/img/favicon/apple-touch-icon.png",
     link: "https://generor.com/",
     category: "Productivity"
   },
