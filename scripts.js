@@ -226,10 +226,10 @@ const tools = [
   },
   {
     name: "Muze Art",
-    description: "AI-powered art generation platform.",
-    logo: "https://muze.art/favicon.ico",
-    link: "https://muze.art/",
-    category: "Art"
+    description: "Turn music into viral videos for social media.",
+    logo: "https://www.muzeart.ai/wp-content/uploads/2023/09/logo-e1694783642299.webp",
+    link: "https://www.muzeart.ai/",
+    category: "Spotify Canvas"
   }
 ];
 
