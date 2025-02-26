@@ -1,12 +1,5 @@
 const tools = [
   {
-    name: "HuggingChat",
-    description: "Open-source conversational AI.",
-    logo: "https://huggingface.co/front/assets/huggingface_logo.svg",
-    link: "https://huggingface.co/chat",
-    category: "Text"
-  },
-  {
     name: "ChatGPT",
     description: "AI-powered chatbot by OpenAI.",
     logo: "https://openai.com/favicon.ico",
@@ -230,6 +223,13 @@ const tools = [
     link: "https://muze.art/",
     category: "Art"
   }
+  {
+    name: "HuggingChat",
+    description: "Open-source conversational AI.",
+    logo: "https://huggingface.co/front/assets/huggingface_logo.svg",
+    link: "https://huggingface.co/chat",
+    category: "Text"
+  },
 ];
 
 
