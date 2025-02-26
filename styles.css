@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
   }
   
@@ -15,4 +15,65 @@ body {
   
   #tool-list .card:hover {
     transform: scale(1.05);
+  }*/
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
   }
+  
+  header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  #tool-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  #tool-list .card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  #tool-list .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  #tool-list .card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+  }
+  
+  #tool-list .card h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #222;
+  }
+  
+  #tool-list .card p {
+    font-size: 14px;
+    color: #555;
+  }
+  
