@@ -66,7 +66,7 @@ const tools = [
   {
     name: "InstaInfluencer",
     description: "AI for Instagram growth.",
-    logo: "https://instainfluencer.com/favicon.ico",
+    logo: "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fb365d6f3901603b21c8db20573094c40.cdn.bubble.io%2Ff1641423012826x670303793550204000%2Fapple-yin-yang-clipart-8.png?w=&h=&auto=compress&dpr=1&fit=max",
     link: "https://instainfluencer.com/",
     category: "Social Media"
   },
