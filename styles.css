@@ -147,7 +147,7 @@ header {
 }
 
 .blink {
-  animation: blink 1.5s infinite; /* Blinking animation */
+  animation: blink 1.0s infinite; /* Blinking animation */
 }
 
 @keyframes blink {
