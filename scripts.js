@@ -7,140 +7,56 @@ const tools = [
     category: "Text"
   },
   {
-    name: "Stable Diffusion",
-    description: "Open-source image generation model.",
-    logo: "https://stability.ai/logo.png",
-    link: "https://stability.ai/",
-    category: "Image"
-  },
-  {
-    name: "Coqui TTS",
-    description: "Open-source text-to-speech.",
-    logo: "https://coqui.ai/logo.png",
-    link: "https://coqui.ai/",
-    category: "Audio"
-  },
-  {
-    name: "Remove.bg",
-    description: "Free background removal tool.",
-    logo: "https://www.remove.bg/apple-touch-icon.png",
-    link: "https://www.remove.bg/",
-    category: "Image"
-  },
-  {
-    name: "Whisper by OpenAI",
-    description: "Open-source speech recognition.",
+    name: "ChatGPT",
+    description: "AI-powered chatbot by OpenAI.",
     logo: "https://openai.com/favicon.ico",
-    link: "https://github.com/openai/whisper",
-    category: "Audio"
-  },
-  {
-    name: "LibreTranslate",
-    description: "Open-source translation tool.",
-    logo: "https://libretranslate.com/static/favicon.ico",
-    link: "https://libretranslate.com/",
+    link: "https://chat.openai.com/",
     category: "Text"
   },
   {
-    name: "GPT-Neo",
-    description: "Open-source text generation model.",
-    logo: "https://eleuther.ai/favicon.ico",
-    link: "https://github.com/EleutherAI/gpt-neo",
+    name: "DeepSeek",
+    description: "AI model for search and conversational tasks.",
+    logo: "https://deepseek.com/favicon.ico",
+    link: "https://www.deepseek.com/",
     category: "Text"
   },
   {
-    name: "DeepArt.io",
-    description: "Free AI art generator.",
-    logo: "https://deepart.io/favicon.ico",
-    link: "https://deepart.io/",
-    category: "Image"
+    name: "Perplexity AI",
+    description: "AI-powered search engine with contextual understanding.",
+    logo: "https://www.perplexity.ai/favicon.ico",
+    link: "https://www.perplexity.ai/",
+    category: "Text"
   },
   {
-    name: "Runway ML",
-    description: "Free tier for AI video editing.",
-    logo: "https://runwayml.com/favicon.ico",
-    link: "https://runwayml.com/",
-    category: "Video"
+    name: "Claude",
+    description: "Conversational AI by Anthropic.",
+    logo: "https://www.anthropic.com/favicon.ico",
+    link: "https://www.anthropic.com/",
+    category: "Text"
   },
   {
-    name: "Pandas AI",
-    description: "Open-source AI for data analysis.",
-    logo: "https://pandas-ai.vercel.app/favicon.ico",
-    link: "https://github.com/gventuri/pandas-ai",
-    category: "Data"
+    name: "Google Bard",
+    description: "AI-powered chatbot by Google.",
+    logo: "https://bard.google.com/favicon.ico",
+    link: "https://bard.google.com/",
+    category: "Text"
   },
   {
-    name: "DALL-E Mini (Craiyon)",
-    description: "Free image generation tool.",
-    logo: "https://www.craiyon.com/favicon.ico",
-    link: "https://www.craiyon.com/",
-    category: "Image"
+    name: "Mistral AI",
+    description: "Open-weight language models.",
+    logo: "https://mistral.ai/favicon.ico",
+    link: "https://mistral.ai/",
+    category: "Text"
   },
   {
-    name: "DeepCode",
-    description: "Free AI-powered code review.",
-    logo: "https://www.deepcode.ai/favicon.ico",
-    link: "https://www.deepcode.ai/",
-    category: "Coding"
-  },
-  {
-    name: "MuseNet",
-    description: "Free AI music generator.",
-    logo: "https://openai.com/favicon.ico",
-    link: "https://openai.com/blog/musenet/",
-    category: "Audio"
-  },
-  {
-    name: "TensorFlow.js",
-    description: "Run AI models directly in the browser.",
-    logo: "https://www.tensorflow.org/favicon.ico",
-    link: "https://www.tensorflow.org/js",
-    category: "Coding"
-  },
-  {
-    name: "DeepAI Image Editor",
-    description: "Free image enhancement tool.",
-    logo: "https://deepai.org/favicon.ico",
-    link: "https://deepai.org/machine-learning-model/torch-srgan",
-    category: "Image"
-  },
-  {
-    name: "Vosk",
-    description: "Offline speech recognition.",
-    logo: "https://alphacephei.com/vosk/favicon.ico",
-    link: "https://alphacephei.com/vosk/",
-    category: "Audio"
-  },
-  {
-    name: "Pictory",
-    description: "Free AI video summarization.",
-    logo: "https://pictory.ai/favicon.ico",
-    link: "https://pictory.ai/",
-    category: "Video"
-  },
-  {
-    name: "Deepware Scanner",
-    description: "Free deepfake detection tool.",
-    logo: "https://deepware.ai/favicon.ico",
-    link: "https://deepware.ai/",
-    category: "Video"
-  },
-  {
-    name: "CodeGPT",
-    description: "Open-source code generation.",
-    logo: "https://codegpt.co/favicon.ico",
-    link: "https://github.com/apple/coremltools",
-    category: "Coding"
-  },
-  {
-    name: "Google Text-to-Speech",
-    description: "Free text-to-speech API.",
-    logo: "https://cloud.google.com/favicon.ico",
-    link: "https://cloud.google.com/text-to-speech",
-    category: "Audio"
+    name: "Llama by Meta",
+    description: "Meta's large language model.",
+    logo: "https://about.fb.com/wp-content/uploads/2019/11/meta-logo.png",
+    link: "https://ai.meta.com/llama/",
+    category: "Text"
   }
-  // Add more AI tools here to reach 100 total
 ];
+
   
   const toolList = document.getElementById("tool-list");
   
