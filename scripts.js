@@ -1,6 +1,13 @@
 const tools = [
   
   {
+  name: "CerebrasCoder",
+  description: "AI-powered coding assistant by Cerebras.",
+  logo: "https://stevekrouse-blob_admin.web.val.run/api/public/CerebrasCoderOG.jpg", // Placeholder logo
+  link: "https://cerebrascoder.com/",
+  category: "Coding"
+},
+  {
     name: "ChatGPT",
     description: "AI-powered chatbot by OpenAI.",
     logo: "https://openai.com/favicon.ico",
