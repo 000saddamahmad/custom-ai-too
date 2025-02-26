@@ -16,7 +16,7 @@ const tools = [
   {
     name: "DeepSeek",
     description: "AI model for search and conversational tasks.",
-    logo: "https://deepseek.com/favicon.ico",
+    logo: "https://cdn.deepseek.com/chat/icon.png",
     link: "https://www.deepseek.com/",
     category: "Text"
   },
