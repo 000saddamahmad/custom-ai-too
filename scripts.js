@@ -222,14 +222,14 @@ const tools = [
     logo: "https://muze.art/favicon.ico",
     link: "https://muze.art/",
     category: "Art"
-  }
+  },
   {
     name: "HuggingChat",
     description: "Open-source conversational AI.",
     logo: "https://huggingface.co/front/assets/huggingface_logo.svg",
     link: "https://huggingface.co/chat",
     category: "Text"
-  },
+  }
 ];
 
 
