@@ -860,3 +860,9 @@ const tools = [
       toolList.innerHTML += card;
     });
   });
+
+// Hide the splash screen after the page is fully loaded
+window.addEventListener('load', function() {
+  const splashScreen = document.getElementById('splash-screen');
+  splashScreen.style.display = 'none';
+});
