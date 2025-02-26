@@ -66,7 +66,7 @@ const tools = [
   {
     name: "InstaInfluencer",
     description: "AI for Instagram growth.",
-    logo: "https://www.instainfluencer.ai/opengraph-image.png?270f3bbf09d723c0",
+    logo: "https://www.instainfluencer.ai/favicon.ico",
     link: "https://www.instainfluencer.ai/",
     category: "Social Media"
   },
@@ -121,9 +121,9 @@ const tools = [
   },
   {
     name: "ThatNeedle",
-    description: "AI search engine for hard-to-find information.",
-    logo: "https://thatneedle.com/favicon.ico",
-    link: "https://thatneedle.com/",
+    description: "Instant AI summaries for YouTube videos",
+    logo: "https://media.theresanaiforthat.com/icons/thatneedle.svg",
+    link: "https://gist.thatneedle.com/",
     category: "Search"
   },
   {
