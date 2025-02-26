@@ -201,12 +201,12 @@ const tools = [
     description: "Generate or transform your content with multi-step AI workflows.",
     logo: "https://media.theresanaiforthat.com/icons/deep-sequencer.png",
     link: "https://deepsequencer.netlify.app/",
-    category: "Music"
+    category: "Productivity"
   },
   {
     name: "Veriff",
     description: "AI-driven identity verification.",
-    logo: "https://veriff.com/favicon.ico",
+    logo: "https://www.veriff.com/favicon/apple-icon-57x57.png",
     link: "https://veriff.com/",
     category: "Security"
   },
