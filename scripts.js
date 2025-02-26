@@ -191,9 +191,9 @@ const tools = [
   },
   {
     name: "Video to Blog",
-    description: "Convert videos into blog articles using AI.",
-    logo: "https://videotoblog.com/favicon.ico",
-    link: "https://videotoblog.com/",
+    description: "Instantly convert videos into powerful blog articles using AI.",
+    logo: "https://www.videotoblog.ai/_next/static/media/mark.54390744.svg",
+    link: "https://www.videotoblog.ai/",
     category: "Content Creation"
   },
   {
