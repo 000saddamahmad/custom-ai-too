@@ -142,9 +142,9 @@ const tools = [
   },
   {
     name: "The Good AI",
-    description: "Ethical AI-powered automation tools.",
-    logo: "https://thegoodai.com/favicon.ico",
-    link: "https://thegoodai.com/",
+    description: "AI essay writer that writes your essays for you.",
+    logo: "https://www.the-good-ai.com/icon.png",
+    link: "https://www.the-good-ai.com/",
     category: "Automation"
   },
   {
