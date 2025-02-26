@@ -31,7 +31,7 @@ const tools = [
   {
     name: "Google Bard",
     description: "AI-powered chatbot by Google.",
-    logo: "https://bard.google.com/favicon.ico",
+    logo: "https://www.gstatic.com/lamda/images/gemini_favicon_f069958c85030456e93de685481c559f160ea06b.png",
     link: "https://bard.google.com/",
     category: "Text"
   },
@@ -45,7 +45,7 @@ const tools = [
   {
     name: "Llama by Meta",
     description: "Meta's large language model.",
-    logo: "https://about.fb.com/wp-content/uploads/2019/11/meta-logo.png",
+    logo: "https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico",
     link: "https://ai.meta.com/llama/",
     category: "Text"
   },
@@ -59,7 +59,7 @@ const tools = [
   {
     name: "Bolt.new",
     description: "AI-driven business tools.",
-    logo: "https://bolt.new/favicon.ico",
+    logo: "https://bolt.new/static/favicon.svg",
     link: "https://bolt.new/",
     category: "Business"
   },
