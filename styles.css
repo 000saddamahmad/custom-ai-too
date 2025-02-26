@@ -97,3 +97,28 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* Logo Styling */
+.logo {
+  height: 40px; /* Adjust height as needed */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Navbar Styling */
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #0d6efd !important; /* Change hover color as needed */
+}
