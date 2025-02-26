@@ -66,15 +66,15 @@ const tools = [
   {
     name: "InstaInfluencer",
     description: "AI for Instagram growth.",
-    logo: "https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fb365d6f3901603b21c8db20573094c40.cdn.bubble.io%2Ff1641423012826x670303793550204000%2Fapple-yin-yang-clipart-8.png?w=&h=&auto=compress&dpr=1&fit=max",
-    link: "https://instainfluencer.com/",
+    logo: "https://www.instainfluencer.ai/opengraph-image.png?270f3bbf09d723c0",
+    link: "https://www.instainfluencer.ai/",
     category: "Social Media"
   },
   {
     name: "Informly Idea Validator",
     description: "AI-powered idea validation tool.",
-    logo: "https://informly.com/favicon.ico",
-    link: "https://informly.com/",
+    logo: "https://validator.informly.ai/static/tenants/validator/img/favicon.svg",
+    link: "https://validator.informly.ai/",
     category: "Business"
   },
   {
