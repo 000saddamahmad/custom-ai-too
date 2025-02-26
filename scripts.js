@@ -78,10 +78,10 @@ const tools = [
     category: "Business"
   },
   {
-    name: "Eternity AI",
+    name: "Eternity AC",
     description: "AI for digital immortality.",
-    logo: "https://eternity.ai/favicon.ico",
-    link: "https://eternity.ai/",
+    logo: "https://eternity.ac/favicon.ico",
+    link: "https://eternity.ac/",
     category: "AI Research"
   },
   {
