@@ -212,10 +212,10 @@ const tools = [
   },
   {
     name: "OneTask",
-    description: "AI-powered task manager and automation tool.",
-    logo: "https://onetask.com/favicon.ico",
-    link: "https://onetask.com/",
-    category: "Productivity"
+    description: "AI to-do app that prioritizes tasks for creatives",
+    logo: "https://media.theresanaiforthat.com/icons/onetask.svg",
+    link: "https://onetask.me/",
+    category: "Task management"
   },
   {
     name: "HuggingChat",
