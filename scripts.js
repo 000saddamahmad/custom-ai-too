@@ -16,7 +16,7 @@ const tools = [
   {
     name: "DeepSeek",
     description: "AI model for search and conversational tasks.",
-    logo: "https://cdn.deepseek.com/chat/icon.png",
+    logo: "https://deepseek.com/favicon.ico",
     link: "https://www.deepseek.com/",
     category: "Text"
   },
@@ -54,8 +54,184 @@ const tools = [
     logo: "https://about.fb.com/wp-content/uploads/2019/11/meta-logo.png",
     link: "https://ai.meta.com/llama/",
     category: "Text"
+  },
+  {
+    name: "MyUnite AI",
+    description: "AI-powered automation and assistance tool.",
+    logo: "https://myunite.ai/favicon.ico",
+    link: "https://myunite.ai/",
+    category: "Automation"
+  },
+  {
+    name: "Bolt.new",
+    description: "AI-driven business tools.",
+    logo: "https://bolt.new/favicon.ico",
+    link: "https://bolt.new/",
+    category: "Business"
+  },
+  {
+    name: "InstaInfluencer",
+    description: "AI for Instagram growth.",
+    logo: "https://instainfluencer.com/favicon.ico",
+    link: "https://instainfluencer.com/",
+    category: "Social Media"
+  },
+  {
+    name: "Informly Idea Validator",
+    description: "AI-powered idea validation tool.",
+    logo: "https://informly.com/favicon.ico",
+    link: "https://informly.com/",
+    category: "Business"
+  },
+  {
+    name: "Eternity AI",
+    description: "AI for digital immortality.",
+    logo: "https://eternity.ai/favicon.ico",
+    link: "https://eternity.ai/",
+    category: "AI Research"
+  },
+  {
+    name: "AutoUGC",
+    description: "AI-driven user-generated content creator.",
+    logo: "https://autougc.com/favicon.ico",
+    link: "https://autougc.com/",
+    category: "Content Creation"
+  },
+  {
+    name: "BoTDojo",
+    description: "AI automation for chatbots.",
+    logo: "https://botdojo.com/favicon.ico",
+    link: "https://botdojo.com/",
+    category: "Automation"
+  },
+  {
+    name: "Generor",
+    description: "AI-powered idea generation tool.",
+    logo: "https://generor.com/favicon.ico",
+    link: "https://generor.com/",
+    category: "Productivity"
+  },
+  {
+    name: "MyAI Ninja",
+    description: "AI-powered productivity assistant.",
+    logo: "https://myaininja.com/favicon.ico",
+    link: "https://myaininja.com/",
+    category: "Productivity"
+  },
+  {
+    name: "ThetaWave AI",
+    description: "AI-driven sound and meditation tools.",
+    logo: "https://thetawave.ai/favicon.ico",
+    link: "https://thetawave.ai/",
+    category: "Wellness"
+  },
+  {
+    name: "ThatNeedle",
+    description: "AI search engine for hard-to-find information.",
+    logo: "https://thatneedle.com/favicon.ico",
+    link: "https://thatneedle.com/",
+    category: "Search"
+  },
+  {
+    name: "Sparkle AI",
+    description: "AI-based design and branding tool.",
+    logo: "https://sparkle.ai/favicon.ico",
+    link: "https://sparkle.ai/",
+    category: "Design"
+  },
+  {
+    name: "ScanRelief",
+    description: "AI-driven document scanner and optimizer.",
+    logo: "https://scanrelief.com/favicon.ico",
+    link: "https://scanrelief.com/",
+    category: "Productivity"
+  },
+  {
+    name: "The Good AI",
+    description: "Ethical AI-powered automation tools.",
+    logo: "https://thegoodai.com/favicon.ico",
+    link: "https://thegoodai.com/",
+    category: "Automation"
+  },
+  {
+    name: "Zoviz Branding Expert",
+    description: "AI-powered branding and marketing insights.",
+    logo: "https://zoviz.com/favicon.ico",
+    link: "https://zoviz.com/",
+    category: "Marketing"
+  },
+  {
+    name: "Sheetsy",
+    description: "AI automation for spreadsheets.",
+    logo: "https://sheetsy.com/favicon.ico",
+    link: "https://sheetsy.com/",
+    category: "Productivity"
+  },
+  {
+    name: "Syft AI",
+    description: "AI for data analytics and automation.",
+    logo: "https://syft.ai/favicon.ico",
+    link: "https://syft.ai/",
+    category: "Data"
+  },
+  {
+    name: "ReedPartner",
+    description: "AI recruitment and job-matching tool.",
+    logo: "https://reedpartner.com/favicon.ico",
+    link: "https://reedpartner.com/",
+    category: "HR"
+  },
+  {
+    name: "WatchMyCompetitor",
+    description: "AI-powered competitive intelligence tool.",
+    logo: "https://watchmycompetitor.com/favicon.ico",
+    link: "https://watchmycompetitor.com/",
+    category: "Business"
+  },
+  {
+    name: "Interpret AI",
+    description: "AI-powered text and voice analysis.",
+    logo: "https://interpret.ai/favicon.ico",
+    link: "https://interpret.ai/",
+    category: "AI Research"
+  },
+  {
+    name: "Video to Blog",
+    description: "Convert videos into blog articles using AI.",
+    logo: "https://videotoblog.com/favicon.ico",
+    link: "https://videotoblog.com/",
+    category: "Content Creation"
+  },
+  {
+    name: "Deep Sequencer",
+    description: "AI-powered music composition.",
+    logo: "https://deepsequencer.com/favicon.ico",
+    link: "https://deepsequencer.com/",
+    category: "Music"
+  },
+  {
+    name: "Veriff",
+    description: "AI-driven identity verification.",
+    logo: "https://veriff.com/favicon.ico",
+    link: "https://veriff.com/",
+    category: "Security"
+  },
+  {
+    name: "OneTask",
+    description: "AI-powered task manager and automation tool.",
+    logo: "https://onetask.com/favicon.ico",
+    link: "https://onetask.com/",
+    category: "Productivity"
+  },
+  {
+    name: "Muze Art",
+    description: "AI-powered art generation platform.",
+    logo: "https://muze.art/favicon.ico",
+    link: "https://muze.art/",
+    category: "Art"
   }
 ];
+
 
   
   const toolList = document.getElementById("tool-list");
