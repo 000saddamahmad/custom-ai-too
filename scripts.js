@@ -150,15 +150,15 @@ const tools = [
   {
     name: "Zoviz Branding Expert",
     description: "AI-powered branding and marketing insights.",
-    logo: "https://zoviz.com/favicon.ico",
-    link: "https://zoviz.com/",
+    logo: "https://cdn.zoviz.com/ssr/images/zoviz-logo-dark.svg",
+    link: "https://ai-branding.zoviz.com/",
     category: "Marketing"
   },
   {
     name: "Sheetsy",
     description: "AI automation for spreadsheets.",
-    logo: "https://sheetsy.com/favicon.ico",
-    link: "https://sheetsy.com/",
+    logo: "https://sheetsy.co/_next/static/media/logo.5788bcf4.svg",
+    link: "https://sheetsy.co/",
     category: "Productivity"
   },
   {
