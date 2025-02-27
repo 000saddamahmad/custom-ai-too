@@ -72,7 +72,18 @@
   <p>Your one-stop platform for free AI tools</p>
   <input type="text" id="search" class="form-control w-50 mx-auto mb-3" placeholder="Search for tools...">
   
- 
+  <!-- Category Filter -->
+        <div class="dropdown mb-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown">
+                Filter by Category
+            </button>
+            <ul class="dropdown-menu" id="categoryMenu">
+                <li><a class="dropdown-item" data-category="all" href="#">All</a></li>
+                <li><a class="dropdown-item" data-category="Data Analysis" href="#">Data Analysis</a></li>
+                <li><a class="dropdown-item" data-category="Creative Design" href="#">Creative Design</a></li>
+                <li><a class="dropdown-item" data-category="Education" href="#">Education</a></li>
+            </ul>
+        </div>
 </header>
  <!-- Category Dropdown -->
   <div class="dropdown">
