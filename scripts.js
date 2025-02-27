@@ -857,16 +857,18 @@ const tools = [
   },
 ];
 
+ 
 const toolList = document.getElementById("tool-list");
-
 // Display tools
 function displayTools(filteredTools) {
+  const toolList = document.getElementById("tool-list");
+  if (!toolList) return; // Exit if tool-list isn’t found (e.g., on non-tool pages)
   toolList.innerHTML = "";
   filteredTools.forEach(tool => {
     const card = `
       <div class="col-md-4">
         <div class="card">
-          <img src="${tool.logo}" class="card-img-top" alt="${tool.name}">
+          <img src="${tool.logo}" class="card-img-top" alt="${tool.name}" onerror="this.src='logo.png';">
           <div class="card-body">
             <h5 class="card-title">${tool.name}</h5>
             <p class="card-text">${tool.description}</p>
@@ -879,33 +881,39 @@ function displayTools(filteredTools) {
   });
 }
 
-// Initial display of all tools
-displayTools(tools);
-
-// Search functionality
-document.getElementById("search").addEventListener("input", (e) => {
-  const searchTerm = e.target.value.toLowerCase();
-  const filteredTools = tools.filter(tool =>
-    tool.name.toLowerCase().includes(searchTerm) ||
-    tool.description.toLowerCase().includes(searchTerm)
-  );
-  displayTools(filteredTools);
-});
-
-// Category filter functionality
-document.querySelectorAll(".dropdown-item").forEach(item => {
-  item.addEventListener("click", (e) => {
-    e.preventDefault(); // Prevent default link behavior
-    const category = e.target.dataset.category;
-    const filteredTools = category === "all" 
-      ? tools 
-      : tools.filter(tool => tool.category === category);
+// Only run search and filter logic on the index page
+if (document.getElementById("search")) {
+  // Search functionality
+  document.getElementById("search").addEventListener("input", (e) => {
+    const searchTerm = e.target.value.toLowerCase();
+    const filteredTools = tools.filter(tool =>
+      tool.name.toLowerCase().includes(searchTerm) ||
+      tool.description.toLowerCase().includes(searchTerm)
+    );
     displayTools(filteredTools);
   });
-});
 
-// Hide the splash screen after the page is fully loaded
+  // Category filter functionality
+  document.querySelectorAll(".dropdown-item").forEach(item => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+      const category = e.target.dataset.category;
+      const filteredTools = category === "all" 
+        ? tools 
+        : tools.filter(tool => tool.category === category);
+      displayTools(filteredTools);
+    });
+  });
+
+  // Initial display of all tools
+  displayTools(tools);
+}
+
+// Hide splash screen after load
 window.addEventListener('load', function() {
   const splashScreen = document.getElementById('splash-screen');
-  splashScreen.style.display = 'none';
+  if (splashScreen) splashScreen.style.display = 'none';
 });
+
+
+
