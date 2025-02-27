@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -40,10 +40,6 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
- 
-
-
- 
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -55,8 +51,22 @@
           <li class="nav-item">
             <a class="nav-link" href="/">Home</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <li><a class="dropdown-item" href="/best-ai-tools-for-content-creation">Best AI Tools for Content Creation</a></li>
+              <li><a class="dropdown-item" href="/free-ai-tools-for-video-editing">Free AI Tools for Video Editing</a></li>
+              <li><a class="dropdown-item" href="/ai-tools-for-developers">AI Tools for Developers</a></li>
+              <li><a class="dropdown-item" href="/ai-tools-for-designers">AI Tools for Designers</a></li>
+              <li><a class="dropdown-item" href="/ai-tools-for-marketing">AI Tools for Marketing</a></li>
+              <li><a class="dropdown-item" href="/ai-tools-for-students">AI Tools for Students</a></li>
+              <li><a class="dropdown-item" href="/ai-tools-for-small-businesses">AI Tools for Small Businesses</a></li>
+            </ul>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="/about.html">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact</a>
@@ -67,41 +77,42 @@
   </nav>
 
   <header class="bg-dark text-white text-center py-4">
-  <h1>Free AI Tools Directory</h1>
-  <p>Your one-stop platform for free AI tools</p>
-  <input type="text" id="search" class="form-control w-50 mx-auto mb-3" placeholder="Search for tools...">
-  
-  <!-- Filter by Category Button with Dropdown -->
-  <div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
-      Filter by Category
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-      <li><a class="dropdown-item" href="#" data-category="all">All</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Coding">Coding</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Data Analysis">Data Analysis</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Creative Design">Creative Design</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Automation">Automation</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Voice Synthesis">Voice Synthesis</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Text">Text</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Business">Business</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Social Media">Social Media</a></li>
-      <li><a class="dropdown-item" href="#" data-category="AI Research">AI Research</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Content Creation">Content Creation</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Productivity">Productivity</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Wellness">Wellness</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Search">Search</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Design">Design</a></li>
-      <li><a class="dropdown-item" href="#" data-category="E-commerce">E-commerce</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Finance">Finance</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Education">Education</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Security">Security</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Task management">Task Management</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Art & Creativity">Art & Creativity</a></li>
-      <li><a class="dropdown-item" href="#" data-category="Conversational AI">Conversational AI</a></li>
-    </ul>
-  </div>
-</header>
+    <h1>Free AI Tools Directory</h1>
+    <p>Your one-stop platform for free AI tools</p>
+    <input type="text" id="search" class="form-control w-50 mx-auto mb-3" placeholder="Search for tools...">
+    
+    <!-- Filter by Category Button with Dropdown -->
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter by Category
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+        <li><a class="dropdown-item" href="#" data-category="all">All</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Coding">Coding</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Data Analysis">Data Analysis</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Creative Design">Creative Design</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Automation">Automation</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Voice Synthesis">Voice Synthesis</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Text">Text</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Business">Business</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Social Media">Social Media</a></li>
+        <li><a class="dropdown-item" href="#" data-category="AI Research">AI Research</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Content Creation">Content Creation</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Productivity">Productivity</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Wellness">Wellness</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Search">Search</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Design">Design</a></li>
+        <li><a class="dropdown-item" href="#" data-category="E-commerce">E-commerce</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Finance">Finance</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Education">Education</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Security">Security</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Task management">Task Management</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Art & Creativity">Art & Creativity</a></li>
+        <li><a class="dropdown-item" href="#" data-category="Conversational AI">Conversational AI</a></li>
+      </ul>
+    </div>
+  </header>
+
   <!-- Main Content -->
   <main class="container my-5">
     <div class="row" id="tool-list">
@@ -115,7 +126,7 @@
     <a class="navbar-brand" href="/">
       <img src="logo.png" alt="Free AI Tools Directory Logo" class="logo">
     </a>
-    <p>&copy; 2023 Free AI Tools Directory. All rights reserved.</p>
+    <p>© 2023 Free AI Tools Directory. All rights reserved.</p>
   </footer>
 
   <!-- Splash Screen -->
@@ -124,9 +135,9 @@
       <img src="https://eternity.ac/logo/malanka-loader.svg" class="blink" width="240" height="132"/>
     </div>
   </div>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="scripts.js"></script>
 </body>
 </html>
