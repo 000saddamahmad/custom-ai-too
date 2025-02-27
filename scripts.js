@@ -858,9 +858,6 @@ const tools = [
 ];
 
 const toolList = document.getElementById("tool-list");
-const categoryDropdown = document.getElementById("categoryDropdown");
-const searchInput = document.getElementById("search");
-const categoryMenu = document.getElementById("categoryMenu");
 
 // Display tools
 function displayTools(filteredTools) {
@@ -894,23 +891,18 @@ document.getElementById("search").addEventListener("input", (e) => {
   );
   displayTools(filteredTools);
 });
- // Category filter functionality (event delegation)
-        categoryMenu.addEventListener("click", (e) => {
-            e.preventDefault();
-            if (e.target.classList.contains("dropdown-item")) {
-                const category = e.target.dataset.category;
-                const filteredTools = category === "all"
-                    ? tools
-                    : tools.filter(tool => tool.category.toLowerCase() === category.toLowerCase());
-                displayTools(filteredTools);
-            }
-        });
 
-
-
-
-
-
+// Category filter functionality
+document.querySelectorAll(".dropdown-item").forEach(item => {
+  item.addEventListener("click", (e) => {
+    e.preventDefault(); // Prevent default link behavior
+    const category = e.target.dataset.category;
+    const filteredTools = category === "all" 
+      ? tools 
+      : tools.filter(tool => tool.category === category);
+    displayTools(filteredTools);
+  });
+});
 
 // Hide the splash screen after the page is fully loaded
 window.addEventListener('load', function() {
