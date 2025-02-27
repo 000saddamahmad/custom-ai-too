@@ -149,6 +149,24 @@ header {
 .blink {
   animation: blink 1.0s infinite; /* Blinking animation */
 }
+/* Dropdown Styles */
+.dropdown {
+  margin-top: 15px;
+}
+
+.dropdown-menu {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.dropdown-item {
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
 
 @keyframes blink {
   0%, 100% { opacity: 1; }
