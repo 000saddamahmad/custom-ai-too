@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Best AI Tools for Content Creation - Discover top AI tools for writers and creators at AIHubPro.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Best AI Tools for Content Creation | AIHubPro</title>
+  <link rel="icon" type="x-icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Categories</a>
+            <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+              <li><a class="dropdown-item" href="best-ai-tools-for-content-creation.html">Best AI Tools for Content Creation</a></li>
+              <li><a class="dropdown-item" href="free-ai-tools-for-video-editing.html">Free AI Tools for Video Editing</a></li>
+              <li><a class="dropdown-item" href="ai-tools-for-developers.html">AI Tools for Developers</a></li>
+              <li><a class="dropdown-item" href="ai-tools-for-designers.html">AI Tools for Designers</a></li>
+              <li><a class="dropdown-item" href="ai-tools-for-marketing.html">AI Tools for Marketing</a></li>
+              <li><a class="dropdown-item" href="ai-tools-for-students.html">AI Tools for Students</a></li>
+              <li><a class="dropdown-item" href="ai-tools-for-small-businesses.html">AI Tools for Small Businesses</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-dark text-white text-center py-4">
+    <h1>Best AI Tools for Content Creation</h1>
+    <p>Explore the best AI tools for writing, content generation, and more.</p>
+  </header>
+
+  <main class="container my-5">
+    <div class="row" id="tool-list"></div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-4">
+    <a class="navbar-brand" href="index.html"><img src="logo.png" alt="AIHubPro Logo" class="logo"></a>
+    <p>© 2023 Free AI Tools Directory. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    // Load tools for this category
+    const categoryTools = tools.filter(tool => 
+      ["Content Creation", "Text", "Conversational AI"].includes(tool.category)
+    );
+    displayTools(categoryTools);
+  </script>
+</body>
+</html>
