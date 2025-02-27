@@ -851,7 +851,7 @@ const tools = [
   {
     name: "bugfree.ai",
     description: "Guided Practice on System Design Behavior Problems like the way you do at Leetcode.",
-    logo: "",
+    logo: "https://bugfree.ai/favicon.ico",
     link: "https://bugfree.ai/",
     category: "Education"
   },
