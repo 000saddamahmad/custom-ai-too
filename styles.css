@@ -149,7 +149,7 @@ header {
 .blink {
   animation: blink 1.0s infinite; /* Blinking animation */
 }
-/* Dropdown Styles */
+ /* Dropdown Styles */
 .dropdown {
   margin-top: 15px;
 }
@@ -168,7 +168,13 @@ header {
   color: #fff;
 }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.5; }
+/* Button Styles */
+.btn-secondary {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+  border-color: #545b62;
 }
