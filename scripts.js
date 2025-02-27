@@ -857,13 +857,13 @@ const tools = [
   },
 ];
 
+const toolList = document.getElementById("tool-list");
+const categoryDropdown = document.getElementById("categoryDropdown");
 
-
-  
-  const toolList = document.getElementById("tool-list");
-  
-  // Display tools
-  tools.forEach(tool => {
+// Display tools
+function displayTools(filteredTools) {
+  toolList.innerHTML = "";
+  filteredTools.forEach(tool => {
     const card = `
       <div class="col-md-4">
         <div class="card">
@@ -878,31 +878,31 @@ const tools = [
     `;
     toolList.innerHTML += card;
   });
-  
-  // Search functionality
-  document.getElementById("search").addEventListener("input", (e) => {
-    const searchTerm = e.target.value.toLowerCase();
-    const filteredTools = tools.filter(tool =>
-      tool.name.toLowerCase().includes(searchTerm) ||
-      tool.description.toLowerCase().includes(searchTerm)
-    );
-    toolList.innerHTML = "";
-    filteredTools.forEach(tool => {
-      const card = `
-        <div class="col-md-4">
-          <div class="card">
-            <img src="${tool.logo}" class="card-img-top" alt="${tool.name}">
-            <div class="card-body">
-              <h5 class="card-title">${tool.name}</h5>
-              <p class="card-text">${tool.description}</p>
-              <a href="${tool.link}" target="_blank" class="btn btn-primary">Visit Tool</a>
-            </div>
-          </div>
-        </div>
-      `;
-      toolList.innerHTML += card;
-    });
+}
+
+// Initial display of all tools
+displayTools(tools);
+
+// Search functionality
+document.getElementById("search").addEventListener("input", (e) => {
+  const searchTerm = e.target.value.toLowerCase();
+  const filteredTools = tools.filter(tool =>
+    tool.name.toLowerCase().includes(searchTerm) ||
+    tool.description.toLowerCase().includes(searchTerm)
+  );
+  displayTools(filteredTools);
+});
+
+// Category filter functionality
+document.querySelectorAll(".dropdown-item").forEach(item => {
+  item.addEventListener("click", (e) => {
+    const category = e.target.dataset.category;
+    const filteredTools = category === "all" 
+      ? tools 
+      : tools.filter(tool => tool.category === category);
+    displayTools(filteredTools);
   });
+});
 
 // Hide the splash screen after the page is fully loaded
 window.addEventListener('load', function() {
