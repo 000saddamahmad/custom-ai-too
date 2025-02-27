@@ -57,10 +57,10 @@ const tools = [
     category: "Text"
   },
   {
-    name: "Claude",
-    description: "Conversational AI by Anthropic.",
-    logo: "https://www.anthropic.com/favicon.ico",
-    link: "https://www.anthropic.com/",
+    name: "Llama by Meta",
+    description: "Meta's large language model.",
+    logo: "https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico",
+    link: "https://ai.meta.com/llama/",
     category: "Text"
   },
   {
@@ -71,19 +71,27 @@ const tools = [
     category: "Text"
   },
   {
+    name: "Claude",
+    description: "Conversational AI by Anthropic.",
+    logo: "https://www.anthropic.com/favicon.ico",
+    link: "https://www.anthropic.com/",
+    category: "Text"
+  },
+   {
+    "name": "Hailuoai.video",
+    "description": "AI platform for creative design and art generation.",
+    "logo": "https://hailuoai.video/assets/logo/favicon.png", // Placeholder logo
+    "link": "https://hailuoai.video/",
+    "category": "Creative Design"
+  },
+  {
     name: "Mistral AI",
     description: "Open-weight language models.",
     logo: "https://mistral.ai/favicon.ico",
     link: "https://mistral.ai/",
     category: "Text"
   },
-  {
-    name: "Llama by Meta",
-    description: "Meta's large language model.",
-    logo: "https://static.xx.fbcdn.net/rsrc.php/y5/r/m4nf26cLQxS.ico",
-    link: "https://ai.meta.com/llama/",
-    category: "Text"
-  },
+  
   {
     name: "MyUnite AI",
     description: "AI-powered automation and assistance tool.",
