@@ -613,7 +613,7 @@ const tools = [
   {
     name: "Magic Eraser",
     description: "Removing unwanted elements from images",
-    logo: "",
+    logo: "https://meta.magicstudio.com/assets/me-logo-mobile.svg",
     link: "https://www.magiceraser.io/",
     category: "Design"
   },
