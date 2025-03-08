@@ -72,7 +72,7 @@ const tools = [
   },
   {
     name: "NotebookLM",
-    description: "NotebookLM is an AI-powered research assistant that can help you get to critical insights faster and easier, all grounded in the information you provide.",
+    description: "NotebookLM is an AI-powered note-taking and knowledge management tool by Google.",
     logo: "https://notebooklm.google.com/_/static/branding/v4/light_mode/favicon/favicon-32x32.png",
     link: "https://notebooklm.google.com/",
     category: "Productivity"
