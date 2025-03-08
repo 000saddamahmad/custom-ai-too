@@ -648,7 +648,7 @@ const tools = [
   {
     name: "Unwatermark",
     description: "Easily remove watermarks with advanced AI image recognition technology",
-    logo: "",
+    logo: "https://cdn.unwatermark.ai/userspace/unwatermark/logo/logo-unwatermark.webp",
     link: "https://unwatermark.ai/",
     category: "Design"
   },
