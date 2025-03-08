@@ -76,7 +76,7 @@ const tools = [
     "logo": "https://notebooklm.google.com/_/static/branding/v4/light_mode/favicon/favicon-32x32.png",
     "link": "https://notebooklm.google.com/",
     "category": "Productivity"
-}
+},
   {
     name: "Claude",
     description: "Conversational AI by Anthropic.",
