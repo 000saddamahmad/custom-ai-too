@@ -78,6 +78,13 @@ const tools = [
     category: "Productivity"
 },
   {
+    name: "Manus ai",
+    description: " Manus AI can independently execute tasks such as report writing, data analysis, content generation",
+    logo: "https://files.manuscdn.com/webapp/media/ogBanner.png",
+    link: "https://manus.im/",
+    category: "Text"
+  },
+  {
     name: "Claude",
     description: "Conversational AI by Anthropic.",
     logo: "https://www.anthropic.com/favicon.ico",
