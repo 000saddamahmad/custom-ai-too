@@ -620,7 +620,7 @@ const tools = [
   {
     name: "bigJPG",
     description: "Increasing image resolution",
-    logo: "",
+    logo: "https://bigjpg.com/htdocs/favicon.ico",
     link: "https://bigjpg.com/",
     category: "Design"
   },
