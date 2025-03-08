@@ -71,11 +71,11 @@ const tools = [
     category: "Text"
   },
   {
-    "name": "NotebookLM",
-    "description": "NotebookLM is an AI-powered research assistant that can help you get to critical insights faster and easier, all grounded in the information you provide.",
-    "logo": "https://notebooklm.google.com/_/static/branding/v4/light_mode/favicon/favicon-32x32.png",
-    "link": "https://notebooklm.google.com/",
-    "category": "Productivity"
+    name: "NotebookLM",
+    description: "NotebookLM is an AI-powered research assistant that can help you get to critical insights faster and easier, all grounded in the information you provide.",
+    logo: "https://notebooklm.google.com/_/static/branding/v4/light_mode/favicon/favicon-32x32.png",
+    link: "https://notebooklm.google.com/",
+    category: "Productivity"
 },
   {
     name: "Claude",
