@@ -80,7 +80,7 @@ const tools = [
   {
     name: "Manus ai",
     description: " Manus AI can independently execute tasks such as report writing, data analysis, content generation",
-    logo: "https://files.manuscdn.com/webapp/media/ogBanner.png",
+    logo: "https://manus.im/icon.png?cf131ec9640e9d99",
     link: "https://manus.im/",
     category: "Text"
   },
