@@ -19,7 +19,7 @@ const tools = [
     "description": "AI-driven solutions for automation and optimization.",
     "logo": "https://apob.ai/wp-content/uploads/2024/04/Frame.png", // Placeholder logo
     "link": "https://apob.ai/",
-    "category": "image to video"
+    "category": "Image"
   },
   {
     "name": "ElevenLabs.io",
