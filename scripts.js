@@ -10,7 +10,7 @@ const tools = [
   {
     "name": "Leonardo.ai",
     "description": "AI platform for creative design and art generation.",
-    "logo": "https://leonardo.ai/wp-content/uploads/2025/02/thumb_KG_leonardo.jpg", // Placeholder logo
+    "logo": "https://leonardo.ai/wp-content/uploads/2023/07/logo-leonardo-ai.svg", // Placeholder logo
     "link": "https://leonardo.ai/",
     "category": "Image"
   },
