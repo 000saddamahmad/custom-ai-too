@@ -93,7 +93,7 @@ const tools = [
   },
   {
     name: "Google IDX",
-    description: "AI-assisted workspace for full-stack, multiplatform app development in the cloud. With support for a broad range of frameworks, languages, and services",
+    description: "AI-assisted workspace for full-stack, multiplatform app development in the cloud.",
     logo: "https://developers.google.com/static/idx/images/icon-192.png", // Placeholder logo
     link: "https://idx.dev/",
     category: "Codeing"
