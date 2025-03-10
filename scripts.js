@@ -1,17 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
+ document.addEventListener("DOMContentLoaded", () => {
   const toolList = document.getElementById("tool-list");
 
   if (!toolList) return; // Exit if tool-list isn't found
 
-  // URL of the JSON file in your GitHub repository
-  const githubJsonUrl = "https://github.com/000saddamahmad/custom-ai-too/blob/main/tools.json";
-
-  // Fetch data from GitHub JSON
-  fetch(githubJsonUrl)
-    .then(response => {
-      if (!response.ok) throw new Error("Failed to load JSON");
-      return response.json();
-    })
+  // Fetch data from JSON file
+  fetch("tools.json")
+    .then(response => response.json())
     .then(tools => {
       displayTools(tools); // Initial display of all tools
 
