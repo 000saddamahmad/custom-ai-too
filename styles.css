@@ -15,7 +15,9 @@ header {
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.col-md-4 {
+  min-height: 250px; /* Adjust based on expected content height */
+}
 #tool-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
