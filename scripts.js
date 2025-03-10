@@ -1,9 +1,9 @@
 const toolList = document.getElementById("tool-list");
 
-// Fetch tools data from JSON file
+// Fetch tools data from GitHub JSON file
 async function fetchTools() {
   try {
-    const response = await fetch("tools.json"); // Adjust the path if needed
+    const response = await fetch("https://github.com/000saddamahmad/custom-ai-too/blob/main/tools.json");
     if (!response.ok) {
       throw new Error("Failed to fetch tools data");
     }
