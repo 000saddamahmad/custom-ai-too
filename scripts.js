@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!toolList) return; // Exit if tool-list isn't found
 
   // URL of the JSON file in your GitHub repository
-  const githubJsonUrl = "https://raw.githubusercontent.com/your-username/your-repo/main/tools.json";
+  const githubJsonUrl = "https://github.com/000saddamahmad/custom-ai-too/blob/main/tools.json";
 
   // Fetch data from GitHub JSON
   fetch(githubJsonUrl)
