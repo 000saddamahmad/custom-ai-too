@@ -67,11 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Hide splash screen after load
-window.addEventListener('load', function() {
-  const splashScreen = document.getElementById('splash-screen');
-  if (splashScreen) splashScreen.style.display = 'none';
-});
+
 
 
 
