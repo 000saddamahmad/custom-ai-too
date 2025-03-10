@@ -3,7 +3,7 @@ const toolList = document.getElementById("tool-list");
 // Fetch tools data from JSON file
 async function fetchTools() {
   try {
-    const response = await fetch("/tools.json"); // Adjust the path if needed
+    const response = await fetch("tools.json"); // Adjust the path if needed
     if (!response.ok) {
       throw new Error("Failed to fetch tools data");
     }
