@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Leonardo.ai",
+    "description": "AI platform for creative design and art generation.",
+    "logo": "https://leonardo.ai/wp-content/uploads/2023/07/logo-leonardo-ai.svg",
+    "link": "https://leonardo.ai/",
+    "category": "Image"
+  },
+  {
+    "name": "bugfree.ai",
+    "description": "Guided Practice on System Design Behavior Problems like the way you do at Leetcode.",
+    "logo": "https://bugfree.ai/favicon.ico",
+    "link": "https://bugfree.ai/",
+    "category": "Education"
+  }
+]
