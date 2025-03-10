@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!toolList) return; // Exit if tool-list isn't found
 
-  fetch("https://cors-anywhere.herokuapp.com/https://github.com/000saddamahmad/custom-ai-too/blob/main/tools.json") // Update this URL
+  fetch("https://aihubpro.netlify.app/tools.json") // Update this URL
     .then(response => response.json())
     .then(tools => {
       displayTools(tools); // Initial display
