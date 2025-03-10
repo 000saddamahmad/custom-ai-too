@@ -1,73 +1,64 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const jsonUrl = "https://github.com/000saddamahmad/custom-ai-too/blob/main/tools.json"; // Update with your actual JSON URL
-    const toolListContainer = document.getElementById("tool-list");
-    const searchInput = document.getElementById("search");
-    const categoryItems = document.querySelectorAll(".dropdown-item");
+document.addEventListener("DOMContentLoaded", () => {
+  const toolList = document.getElementById("tool-list");
 
-    let tools = [];
+  if (!toolList) return; // Exit if tool-list isn't found
 
-    // Fetch JSON data from GitHub
-    async function fetchTools() {
-        try {
-            const response = await fetch(jsonUrl);
-            tools = await response.json();
-            displayTools(tools);
-        } catch (error) {
-            console.error("Error loading tools:", error);
-            toolListContainer.innerHTML = "<p>Failed to load tools. Please try again later.</p>";
-        }
-    }
+  // URL of the JSON file in your GitHub repository
+  const githubJsonUrl = "https://raw.githubusercontent.com/your-username/your-repo/main/tools.json";
 
-    // Display tools dynamically
-    function displayTools(filteredTools) {
-        if (!toolListContainer) return;
-        toolListContainer.innerHTML = ""; // Clear previous content
+  // Fetch data from GitHub JSON
+  fetch(githubJsonUrl)
+    .then(response => {
+      if (!response.ok) throw new Error("Failed to load JSON");
+      return response.json();
+    })
+    .then(tools => {
+      displayTools(tools); // Initial display of all tools
 
-        filteredTools.forEach((tool, index) => {
-            const card = `
-                <div class="col-md-4 tool-item">
-                    <div class="tool-card-inner">
-                        <span class="tool-number">${index + 1}.</span>
-                        <img src="${tool.logo || 'default-logo.png'}" alt="${tool.name}" class="tool-logo" onerror="this.src='default-logo.png';">
-                        <span class="tool-name">${tool.name}</span>
-                        <a href="${tool.link}" target="_blank" class="visit-btn">Visit</a>
-                    </div>
-                </div>
-            `;
-            toolListContainer.innerHTML += card;
-        });
-    }
+      // Search functionality
+      document.getElementById("search")?.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filteredTools = tools.filter(tool =>
+          tool.name.toLowerCase().includes(searchTerm) ||
+          tool.description.toLowerCase().includes(searchTerm)
+        );
+        displayTools(filteredTools);
+      });
 
-    // Search Functionality
-    if (searchInput) {
-        searchInput.addEventListener("input", (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filteredTools = tools.filter(tool =>
-                tool.name.toLowerCase().includes(searchTerm) ||
-                tool.description.toLowerCase().includes(searchTerm)
-            );
-            displayTools(filteredTools);
-        });
-    }
-
-    // Category Filter Functionality
-    categoryItems.forEach(item => {
+      // Category filter functionality
+      document.querySelectorAll(".dropdown-item").forEach(item => {
         item.addEventListener("click", (e) => {
-            e.preventDefault();
-            const category = e.target.dataset.category;
-            const filteredTools = category === "all"
-                ? tools
-                : tools.filter(tool => tool.category === category);
-            displayTools(filteredTools);
+          e.preventDefault();
+          const category = e.target.dataset.category;
+          const filteredTools = category === "all"
+            ? tools
+            : tools.filter(tool => tool.category === category);
+          displayTools(filteredTools);
         });
-    });
-
-    // Fetch and display tools on load
-    fetchTools();
+      });
+    })
+    .catch(error => console.error("Error fetching tools:", error));
 });
 
+// Function to display tools
+function displayTools(filteredTools) {
+  const toolList = document.getElementById("tool-list");
+  if (!toolList) return;
 
-
-
-
-
+  toolList.innerHTML = ""; // Clear previous content
+  filteredTools.forEach(tool => {
+    const card = `
+      <div class="col-md-4">
+        <div class="card">
+          <img src="${tool.logo}" class="card-img-top" alt="${tool.name}" onerror="this.src='logo.png';">
+          <div class="card-body">
+            <h5 class="card-title">${tool.name}</h5>
+            <p class="card-text">${tool.description}</p>
+            <a href="${tool.link}" target="_blank" class="btn btn-primary">Visit Tool</a>
+          </div>
+        </div>
+      </div>
+    `;
+    toolList.innerHTML += card;
+  });
+}
