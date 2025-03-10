@@ -1,16 +1,16 @@
- document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const toolList = document.getElementById("tool-list");
+  const searchInput = document.getElementById("search");
 
   if (!toolList) return; // Exit if tool-list isn't found
 
-  // Fetch data from JSON file
-  fetch("tools.json")
+  fetch("https://github.com/000saddamahmad/custom-ai-too/blob/main/tools.json") // Update this URL
     .then(response => response.json())
     .then(tools => {
-      displayTools(tools); // Initial display of all tools
+      displayTools(tools); // Initial display
 
       // Search functionality
-      document.getElementById("search")?.addEventListener("input", (e) => {
+      searchInput?.addEventListener("input", (e) => {
         const searchTerm = e.target.value.toLowerCase();
         const filteredTools = tools.filter(tool =>
           tool.name.toLowerCase().includes(searchTerm) ||
@@ -31,28 +31,32 @@
         });
       });
     })
-    .catch(error => console.error("Error fetching tools:", error));
+    .catch(error => {
+      console.error("Error fetching tools:", error);
+      toolList.innerHTML = `<p class="error-message">Failed to load tools. Please try again later.</p>`;
+    });
 });
 
 // Function to display tools
-function displayTools(filteredTools) {
+function displayTools(tools) {
   const toolList = document.getElementById("tool-list");
   if (!toolList) return;
 
-  toolList.innerHTML = ""; // Clear previous content
-  filteredTools.forEach(tool => {
-    const card = `
-      <div class="col-md-4">
-        <div class="card">
-          <img src="${tool.logo}" class="card-img-top" alt="${tool.name}" onerror="this.src='logo.png';">
-          <div class="card-body">
-            <h5 class="card-title">${tool.name}</h5>
-            <p class="card-text">${tool.description}</p>
-            <a href="${tool.link}" target="_blank" class="btn btn-primary">Visit Tool</a>
-          </div>
-        </div>
+  if (tools.length === 0) {
+    toolList.innerHTML = `<p class="no-results">No tools found.</p>`;
+    return;
+  }
+
+  const cards = tools.map(tool => `
+    <div class="card">
+      <img src="${tool.logo}" alt="${tool.name}" onerror="this.src='logo.png';">
+      <div class="card-content">
+        <h3>${tool.name}</h3>
+        <p>${tool.description}</p>
+        <a href="${tool.link}" target="_blank">Visit Tool</a>
       </div>
-    `;
-    toolList.innerHTML += card;
-  });
+    </div>
+  `).join("");
+
+  toolList.innerHTML = cards;
 }
