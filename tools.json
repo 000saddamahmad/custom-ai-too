@@ -9,14 +9,14 @@
   {
     "name": "Leonardo.ai",
     "description": "AI platform for creative design and art generation.",
-    "logo": "https://leonardo.ai/wp-content/uploads/2023/07/logo-leonardo-ai.svg", // Placeholder logo
+    "logo": "https://leonardo.ai/wp-content/uploads/2023/07/logo-leonardo-ai.svg", 
     "link": "https://leonardo.ai/",
     "category": "Image"
   },
   {
     "name": "Apob AI",
     "description": "AI-driven solutions for automation and optimization.",
-    "logo": "https://apob.ai/wp-content/uploads/2024/04/Frame.png", // Placeholder logo
+    "logo": "https://apob.ai/wp-content/uploads/2024/04/Frame.png",  
     "link": "https://apob.ai/",
     "category": "Image"
   },
@@ -100,7 +100,7 @@
    {
     "name": "Hailuoai.video",
     "description": "AI platform for creative design and art generation.",
-    "logo": "https://hailuoai.video/assets/logo/favicon.png", // Placeholder logo
+    "logo": "https://hailuoai.video/assets/logo/favicon.png", 
     "link": "https://hailuoai.video/",
     "category": "video"
   },
